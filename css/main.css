@@ -417,4 +417,35 @@ a {
   animation: forwards;
 }
 
+.pasos {
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 36px;
+}
+
+.paso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0b0b;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.pasoN {
+  color: #ebebeb;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.pasosCopy {
+  margin: 36px 0;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
