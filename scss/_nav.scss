@@ -1,0 +1,68 @@
+.logo img{
+   height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja{
+    background-color: #EBEBEB;
+}
+.nav_container{
+    height: 56px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilos para el ícono del Menú */
+.icono-menu{
+    position: fixed;
+    margin-right: calc(100vw - 7vh);
+    z-index: 10;
+}
+
+.icono-menu img{
+    vertical-align: top;
+    width: 22px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: #000;
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    z-index: 8;
+}
+
+/* Estilos por agregar en JavaScript */
+.active_nav{
+    transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu .ul_hamburguer{
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu .ul_hamburguer .li_hamburguer{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu .ul_hamburguer .li_hamburguer:hover{
+    background-color: #66cccc;
+    transition: .5s;
+    color: #EBEBEB;
+    font-weight: 500;
+}

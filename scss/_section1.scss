@@ -1,0 +1,46 @@
+.caja__main {
+  height: 85vh;
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+}
+
+.caja__textos {
+  margin: 0;
+  padding-bottom: 3vh;
+  text-align: left;
+  display: block;
+}
+.title_section1 {
+  font-size: 40px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.title__active {
+  font-weight: 700;
+  transform-origin: center;
+  animation:3.5s linear -.5s normal none infinite opacity;
+}
+
+.text__active {
+  font-weight: 700;
+}
+
+.cta {
+  padding: 20px 30px;
+  display: inline-block;
+  background-color: #ebebeb;
+  color: #7b7b7b;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.cta:hover {
+  background-color: #66cccc;
+  transition: .5s;
+  color: #fafafa;
+  animation: forwards;
+}
+

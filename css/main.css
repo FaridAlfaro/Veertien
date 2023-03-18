@@ -1,0 +1,420 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amiko", sans-serif;
+}
+
+.title {
+  display: inline-block;
+  padding: 5vh;
+  text-align: center;
+  color: black;
+}
+
+.copy {
+  display: inline-block;
+  text-align: left;
+  padding: 0 3vh;
+  padding-bottom: 3vh;
+}
+
+.titleB {
+  text-align: center;
+  padding: 3vh 0;
+  color: #EBEBEB;
+}
+
+.subtitle {
+  margin: 0 20px;
+  padding: 0;
+}
+
+main {
+  background-color: #EBEBEB;
+}
+
+.skills {
+  background-color: black;
+}
+
+.img_carousel {
+  height: 200px;
+  scale: 1.5;
+}
+
+.carousel {
+  display: block;
+}
+
+.content {
+  width: 240px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #EBEBEB;
+  height: 40px;
+  position: relative;
+  margin: 10vh auto;
+}
+.content:before {
+  content: "[";
+  position: absolute;
+  left: -50px;
+  line-height: 40px;
+}
+.content:after {
+  content: "]";
+  position: absolute;
+  right: -50px;
+  line-height: 40px;
+}
+.content:after, .content:before {
+  color: #ffffff;
+  font-size: 42px;
+  animation: 2s linear 0s normal none infinite opacity;
+  -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+  -moz-animation: 2s ease-out 0s normal none infinite opacity;
+  -o-animation: 2s ease-out 0s normal none infinite opacity;
+}
+
+.visible {
+  float: left;
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+}
+
+.p_nav {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.ul_nav {
+  margin-top: 0;
+  padding-left: 100px;
+  text-align: left;
+  list-style: none;
+  animation: 6s linear 0s normal none infinite change;
+  -webkit-animation: 6s linear 0s normal none infinite change;
+  -moz-animation: 6s linear 0s normal none infinite change;
+  -o-animation: 6s linear 0s normal none infinite change;
+}
+
+.ul_nav .li_mav {
+  line-height: 40px;
+  margin: 0;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.descubrinos {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.filosofia {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-size: cover;
+  background-image: url(/img/sea-7423274_640.jpg);
+}
+
+.filo_img {
+  filter: invert(1);
+}
+
+.filo_imgb {
+  margin: 100px 0;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.front_filo_img {
+  position: relative;
+}
+
+.back_filo_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.filo_imgb:active {
+  translate: 35vw;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.card_ {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 80%;
+  margin: 20px;
+}
+
+.card_body {
+  margin: 1rem;
+  color: #EBEBEB;
+}
+
+.card_title {
+  font-weight: 700;
+}
+
+.card_img {
+  height: 400px;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #EBEBEB;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.boton:hover {
+  background-color: #2DAAE1;
+  color: #EBEBEB;
+}
+
+.caja_video {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.video {
+  width: 100vw;
+}
+
+.logo img {
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja {
+  background-color: #EBEBEB;
+}
+
+.nav_container {
+  height: 56px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el ícono del Menú */
+.icono-menu {
+  position: fixed;
+  margin-right: calc(100vw - 7vh);
+  z-index: 10;
+}
+
+.icono-menu img {
+  vertical-align: top;
+  width: 22px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor del Menú */
+.cont-menu {
+  background-color: #000;
+  box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  z-index: 8;
+}
+
+/* Estilos por agregar en JavaScript */
+.active_nav {
+  transform: translate(-600px);
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu .ul_hamburguer {
+  padding: 100px 0px 20px 0px;
+  list-style: none;
+}
+
+.cont-menu .ul_hamburguer .li_hamburguer {
+  color: white;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.cont-menu .ul_hamburguer .li_hamburguer:hover {
+  background-color: #66cccc;
+  transition: 0.5s;
+  color: #EBEBEB;
+  font-weight: 500;
+}
+
+.caja__main {
+  height: 85vh;
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+}
+
+.caja__textos {
+  margin: 0;
+  padding-bottom: 3vh;
+  text-align: left;
+  display: block;
+}
+
+.title_section1 {
+  font-size: 40px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.title__active {
+  font-weight: 700;
+  transform-origin: center;
+  animation: 3.5s linear -0.5s normal none infinite opacity;
+}
+
+.text__active {
+  font-weight: 700;
+}
+
+.cta {
+  padding: 20px 30px;
+  display: inline-block;
+  background-color: #ebebeb;
+  color: #7b7b7b;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.cta:hover {
+  background-color: #66cccc;
+  transition: 0.5s;
+  color: #fafafa;
+  animation: forwards;
+}
+
+/*# sourceMappingURL=main.css.map */
