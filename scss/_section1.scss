@@ -30,16 +30,16 @@
 .cta {
   padding: 20px 30px;
   display: inline-block;
-  background-color: #ebebeb;
   color: #7b7b7b;
   text-decoration: none;
   font-weight: 700;
   border-radius: 6px;
+  background: #ebebeb;
 }
 
 .cta:hover {
-  background-color: #66cccc;
-  transition: .5s;
+  background: linear-gradient(to right, #66cccc, #ec008c);
+  transition:  .2s ease-in-out;
   color: #fafafa;
   animation: forwards;
 }

@@ -1,3 +1,20 @@
+const pasos = document.querySelectorAll('.pasos'); /* Obtenemos todos los elementos con la clase "pasos" */
+const pasosArray = Array.from(pasos); /* Convertimos la lista en un array para poder recorrerlo */
+
+pasosArray.forEach(function(paso){ /* Recorremos cada elemento con la clase "pasos" */
+  const pasoTop = paso.offsetTop; /* Obtenemos la posición del elemento respecto al borde superior del documento */
+  const pasoBottom = pasoTop + paso.offsetHeight; /* Obtenemos la posición del borde inferior del elemento */
+
+  /* Función que se activa cuando se hace scroll */
+  window.addEventListener('scroll', function(){
+    const scrollPos = window.scrollY; /* Obtenemos la posición actual del scroll */
+    if(scrollPos >= pasoTop && scrollPos < pasoBottom){ /* Si el scroll está en la sección actual... */
+      paso.querySelector('.paso').classList.add('active'); /* Agregamos la clase "active" al elemento con la clase "paso" */
+    } else {
+      paso.querySelector('.paso').classList.remove('active'); /* Eliminamos la clase "active" si el scroll está en otra sección */
+    }
+  });
+});
 const iconoMenu = document.querySelector('#icono-menu'),
       menu = document.querySelector('#menu');
 
