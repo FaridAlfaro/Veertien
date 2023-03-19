@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "remixicon": "^2.5.0",
     "sass": "^1.59.3"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FaridAlfaro/Veertien.git"
