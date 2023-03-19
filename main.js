@@ -1,20 +1,10 @@
-const pasos = document.querySelectorAll('.pasos'); /* Obtenemos todos los elementos con la clase "pasos" */
-const pasosArray = Array.from(pasos); /* Convertimos la lista en un array para poder recorrerlo */
-
-pasosArray.forEach(function(paso){ /* Recorremos cada elemento con la clase "pasos" */
-  const pasoTop = paso.offsetTop; /* Obtenemos la posición del elemento respecto al borde superior del documento */
-  const pasoBottom = pasoTop + paso.offsetHeight; /* Obtenemos la posición del borde inferior del elemento */
-
-  /* Función que se activa cuando se hace scroll */
-  window.addEventListener('scroll', function(){
-    const scrollPos = window.scrollY; /* Obtenemos la posición actual del scroll */
-    if(scrollPos >= pasoTop && scrollPos < pasoBottom){ /* Si el scroll está en la sección actual... */
-      paso.querySelector('.paso').classList.add('active'); /* Agregamos la clase "active" al elemento con la clase "paso" */
-    } else {
-      paso.querySelector('.paso').classList.remove('active'); /* Eliminamos la clase "active" si el scroll está en otra sección */
-    }
-  });
+window.addEventListener('load', function() {
+  var preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
 });
+
+
+
 const iconoMenu = document.querySelector('#icono-menu'),
       menu = document.querySelector('#menu');
 
@@ -49,23 +39,27 @@ window.onscroll = function() {
 
 
 var Textos = new Array();
-  // Enter the names of the images below
-  Textos[0]="Desarrollo<br>web";
-  Textos[1]="Ciencia de<br>datos";
-  Textos[2]="Diseño<br>multimedia";
- 
+// Enter the names of the images below
+Textos[0]="Desarrollo<br>web";
+Textos[1]="Ciencia de<br>datos";
+Textos[2]="Diseño<br>multimedia";
+
 var nuevoTexto = -1; // para empezar en el primer texto -1, con 0 comienza por mostrar el segundo
 var totalTextos = Textos.length;
- 
+var fadeDuration = 3000; // duración de la animación en milisegundos
+
 function repetir() {
   nuevoTexto++;
   if (nuevoTexto == totalTextos) {
     nuevoTexto = 0;
   }
-  document.getElementById('text_rotate').innerHTML=Textos[nuevoTexto];
-// cambiar 4 por el valor en segundos
-  setTimeout("repetir()", 3*1000);
-  
+  var elemento = document.getElementById('text_rotate');
+  elemento.style.opacity = 0;
+  setTimeout(function() {
+    elemento.innerHTML = Textos[nuevoTexto];
+    elemento.style.opacity = 1;
+  }, fadeDuration / 2);
+  setTimeout(repetir, 3*1000);
 }
-window.onload=repetir;
-//]]>
+
+window.onload = repetir;

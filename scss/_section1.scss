@@ -20,8 +20,9 @@
 .title__active {
   font-weight: 700;
   transform-origin: center;
-  animation:3.5s linear -.5s normal none infinite opacity;
+  transition: opacity .5s ease-in-out;
 }
+
 
 .text__active {
   font-weight: 700;

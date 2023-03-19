@@ -10,6 +10,10 @@ body {
   font-family: "Amiko", sans-serif;
 }
 
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
 .title {
   display: inline-block;
   padding: 5vh;
@@ -393,7 +397,7 @@ a {
 .title__active {
   font-weight: 700;
   transform-origin: center;
-  animation: 3.5s linear -0.5s normal none infinite opacity;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .text__active {
@@ -614,6 +618,7 @@ i {
 
 .form__button {
   display: block;
+  text-align: center;
   margin: 2.5rem auto 3rem;
   padding: 1rem 5rem;
   background: black;
@@ -658,6 +663,35 @@ i {
     transform: translateX(10rem);
     border-radius: inherit;
     box-shadow: inherit;
+  }
+}
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+#loader {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 10px solid #ddd;
+  border-top-color: #333;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 
