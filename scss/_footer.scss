@@ -3,8 +3,8 @@ i {
 }
 .footer {
     padding-block: 5rem;
-    background-color: #33cccc;
-    color: #ebebeb;
+    background-color: $VeertienBlue;
+    color: $VeertienWhite;
 }
 .footer__container {
     max-width: 116rem;
@@ -20,7 +20,7 @@ i {
 }
 .footer__title {
     font-size: 1.8rem;
-    color: #fff;
+    color: $VeertienWhite;
     font-weight: 500;
     margin-bottom: 2rem;
 }
@@ -38,7 +38,7 @@ i {
     transition: color .25s;
 }
 .footer__list-link:hover {
-    color: #fff;
+    color: $VeertienWhite;
 }
 
 .company__info {
@@ -49,7 +49,7 @@ i {
     padding-right: 5rem;
 }
 .company__logo {
-    color: #fff;
+    color: $VeertienWhite;
 }
 .company__info ul {
     flex-direction: row;

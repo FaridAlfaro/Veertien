@@ -15,7 +15,7 @@ a:link, a:visited, a:active {
     display: inline-block;
     padding: 5vh;
     text-align: center;
-    color: black;
+    color: $VeertienBlack;
 }
 .copy{
   display: inline-block;
@@ -26,17 +26,17 @@ a:link, a:visited, a:active {
 .titleB{
   text-align: center;
   padding: 3vh 0;
-  color: #EBEBEB;
+  color: $VeertienWhite;
 }
 .subtitle{
   margin: 0 20px;
   padding: 0;
 }
 main{
-  background-color: #EBEBEB;
+  background-color: $VeertienWhite;
 }
 .skills{
-  background-color: black;
+  background-color: $VeertienBlack;
 }
 .img_carousel{
     height: 200px;
@@ -49,7 +49,7 @@ main{
   width:240px;
   font-size:20px;
   line-height:40px;
-  color:#EBEBEB;
+  color:$VeertienWhite;
   height:40px;
   position: relative;
   margin:10vh auto;
@@ -67,7 +67,7 @@ main{
     line-height:40px;
   }
   &:after, &:before {
-    color:#ffffff;
+    color:$VeertienWhite;
     font-size:42px;
     animation:2s linear 0s normal none infinite opacity;
     -webkit-animation:2s ease-out 0s normal none infinite opacity;
@@ -190,13 +190,13 @@ main{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: $VeertienBlack;
   width: 80%;
   margin: 20px;
 }
 .card_body{
   margin: 1rem;
-  color:#EBEBEB ;
+  color:$VeertienWhite ;
 }
 .card_title{
 font-weight: 700;
@@ -211,17 +211,17 @@ a{
 }
 .boton{
   display: inline-block;
-  background-color: #EBEBEB;
+  background-color: $VeertienWhite;
   padding: 20px;
   text-decoration: none;
-  color: black;
+  color: $VeertienBlack;
   border-radius: 8px;
   transition: .3s;
   font-weight: 500;
 }
 .boton:hover{
-  background-color: #2DAAE1;
-  color: #EBEBEB;
+  background-color: $VeertienBlue;
+  color: $VeertienWhite;
 }
 .caja_video{
   position: relative;

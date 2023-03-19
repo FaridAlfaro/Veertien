@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ebebeb;
+    background: $VeertienWhite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,8 @@
   }
   @keyframes ss {
     0% {scale: .8; opacity: 0; filter:brightness(0);}
-    50% {scale: .9; opacity: 50; color: black;}
-    100% {scale: 1; opacity: 100; color: #33cccc;}
+    50% {scale: .9; opacity: 50; color: $VeertienBlack;}
+    100% {scale: 1; opacity: 100; color: $VeertienBlue;}
   }
 
  

@@ -5,7 +5,7 @@
     justify-content: center;
 }
 .caja{
-    background-color: #EBEBEB;
+    background-color: $VeertienWhite;
 }
 .nav_container{
     height: 56px;
@@ -29,7 +29,7 @@
 
 /* Estilos para el contenedor del Menú */
 .cont-menu{
-    background-color: #000;
+    background-color: $VeertienBlack;
     box-shadow: 2px 0px 5px 2px rgb(66,66,66);
     width: 400px;
     height: 100vh;
@@ -52,7 +52,7 @@
 }
 
 .cont-menu .ul_hamburguer .li_hamburguer{
-    color: white;
+    color: $VeertienWhite;
     display: block;
     font-size: 25px;
     text-decoration: none;
@@ -61,8 +61,8 @@
 }
 
 .cont-menu .ul_hamburguer .li_hamburguer:hover{
-    background-color: #66cccc;
+    background-color: $VeertienBlue;
     transition: .5s;
-    color: #EBEBEB;
+    color: $VeertienWhite;
     font-weight: 500;
 }

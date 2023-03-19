@@ -18,7 +18,7 @@ a:link, a:visited, a:active {
   display: inline-block;
   padding: 5vh;
   text-align: center;
-  color: black;
+  color: #1b1b1b;
 }
 
 .copy {
@@ -31,7 +31,7 @@ a:link, a:visited, a:active {
 .titleB {
   text-align: center;
   padding: 3vh 0;
-  color: #EBEBEB;
+  color: #ebebeb;
 }
 
 .subtitle {
@@ -40,11 +40,11 @@ a:link, a:visited, a:active {
 }
 
 main {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .skills {
-  background-color: black;
+  background-color: #1b1b1b;
 }
 
 .img_carousel {
@@ -60,7 +60,7 @@ main {
   width: 240px;
   font-size: 20px;
   line-height: 40px;
-  color: #EBEBEB;
+  color: #ebebeb;
   height: 40px;
   position: relative;
   margin: 10vh auto;
@@ -78,7 +78,7 @@ main {
   line-height: 40px;
 }
 .content:after, .content:before {
-  color: #ffffff;
+  color: #ebebeb;
   font-size: 42px;
   animation: 2s linear 0s normal none infinite opacity;
   -webkit-animation: 2s ease-out 0s normal none infinite opacity;
@@ -252,14 +252,14 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: #1b1b1b;
   width: 80%;
   margin: 20px;
 }
 
 .card_body {
   margin: 1rem;
-  color: #EBEBEB;
+  color: #ebebeb;
 }
 
 .card_title {
@@ -277,18 +277,18 @@ a {
 
 .boton {
   display: inline-block;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   padding: 20px;
   text-decoration: none;
-  color: black;
+  color: #1b1b1b;
   border-radius: 8px;
   transition: 0.3s;
   font-weight: 500;
 }
 
 .boton:hover {
-  background-color: #2DAAE1;
-  color: #EBEBEB;
+  background-color: #44b9e5;
+  color: #ebebeb;
 }
 
 .caja_video {
@@ -310,7 +310,7 @@ a {
 }
 
 .caja {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .nav_container {
@@ -336,7 +336,7 @@ a {
 
 /* Estilos para el contenedor del Menú */
 .cont-menu {
-  background-color: #000;
+  background-color: #1b1b1b;
   box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
   width: 400px;
   height: 100vh;
@@ -359,7 +359,7 @@ a {
 }
 
 .cont-menu .ul_hamburguer .li_hamburguer {
-  color: white;
+  color: #ebebeb;
   display: block;
   font-size: 25px;
   text-decoration: none;
@@ -368,9 +368,9 @@ a {
 }
 
 .cont-menu .ul_hamburguer .li_hamburguer:hover {
-  background-color: #66cccc;
+  background-color: #44b9e5;
   transition: 0.5s;
-  color: #EBEBEB;
+  color: #ebebeb;
   font-weight: 500;
 }
 
@@ -415,10 +415,24 @@ a {
 }
 
 .cta:hover {
-  background: #66cccc;
+  background: #44b9e5;
   transition: 0.2s ease-in-out;
-  color: #fafafa;
+  color: #ebebeb;
   animation: forwards;
+}
+
+.carousel-control-next-icon:hover {
+  transition: 0.3s;
+  scale: 1.3;
+  background-color: #44b9e5;
+  border-radius: 100%;
+}
+
+.carousel-control-prev-icon:hover {
+  transition: 0.3s;
+  scale: 1.3;
+  background-color: #44b9e5;
+  border-radius: 100%;
 }
 
 i {
@@ -427,7 +441,7 @@ i {
 
 .footer {
   padding-block: 5rem;
-  background-color: #33cccc;
+  background-color: #44b9e5;
   color: #ebebeb;
 }
 
@@ -445,7 +459,7 @@ i {
 
 .footer__title {
   font-size: 1.8rem;
-  color: #fff;
+  color: #ebebeb;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -467,7 +481,7 @@ i {
 }
 
 .footer__list-link:hover {
-  color: #fff;
+  color: #ebebeb;
 }
 
 .company__info {
@@ -479,7 +493,7 @@ i {
 }
 
 .company__logo {
-  color: #fff;
+  color: #ebebeb;
 }
 
 .company__info ul {
@@ -513,7 +527,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0b0b0b;
+  background-color: #1b1b1b;
   height: 50px;
   width: 50px;
   border-radius: 100%;
@@ -537,8 +551,8 @@ i {
   max-width: 40rem;
   padding: 10rem 0;
   margin: 3vh;
-  color: #fbfbfb;
-  background-color: #fbfbfb;
+  color: #ebebeb;
+  background-color: White;
   border-radius: 1rem;
   box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.1);
   isolation: isolate;
@@ -551,7 +565,7 @@ i {
   left: 0;
   width: 100%;
   height: 10rem;
-  background: black;
+  background: #1b1b1b;
   border-radius: 1rem 1rem 100% 100%;
   z-index: -1;
 }
@@ -579,7 +593,7 @@ i {
 .form__input > i {
   font-size: 2rem;
   margin-right: 1rem;
-  color: #66cccc;
+  color: #44b9e5;
 }
 
 .form__input input {
@@ -604,7 +618,7 @@ i {
 .form__input .bar::before {
   content: "";
   position: absolute;
-  background-color: #66cccc;
+  background-color: #44b9e5;
   width: 100%;
   height: 2px;
   transform: scaleX(0);
@@ -621,17 +635,17 @@ i {
   text-align: center;
   margin: 2.5rem auto 3rem;
   padding: 1rem 5rem;
-  background: black;
-  color: #fbfbfb;
+  background: #1b1b1b;
+  color: #ebebeb;
   font: inherit;
-  border: 0.5rem solid #fbfbfb;
+  border: 0.5rem solid rgb(243, 243, 243);
   outline: none;
   cursor: pointer;
   border-radius: 3rem;
 }
 
 .form__button:hover {
-  background: #66cccc;
+  background: #44b9e5;
   transition: 0.4s;
 }
 
@@ -644,7 +658,7 @@ i {
 
 .form__switch a {
   text-decoration: none;
-  color: #66cccc;
+  color: #44b9e5;
 }
 
 .form__switch a:hover {
@@ -692,12 +706,12 @@ i {
   50% {
     scale: 0.9;
     opacity: 50;
-    color: black;
+    color: #1b1b1b;
   }
   100% {
     scale: 1;
     opacity: 100;
-    color: #33cccc;
+    color: #44b9e5;
   }
 }
 

@@ -3,8 +3,8 @@
     max-width: 40rem;
     padding: 10rem 0;
     margin: 3vh;
-    color: #fbfbfb;
-    background-color: #fbfbfb;
+    color: $VeertienWhite;
+    background-color: White;
     border-radius: 1rem;
     box-shadow: 0 1px 1rem rgba(0, 0, 0, .1);
     isolation: isolate;
@@ -17,7 +17,7 @@
     left: 0;
     width: 100%;
     height: 10rem;
-    background: black;
+    background: $VeertienBlack;
     border-radius: 1rem 1rem 100% 100%;
     z-index: -1;
 }
@@ -45,7 +45,7 @@
 .form__input>i {
     font-size: 2rem;
     margin-right: 1rem;
-    color: #66cccc;
+    color: $VeertienBlue;
 }
 
 .form__input input {
@@ -70,7 +70,7 @@
 .form__input .bar::before {
     content: "";
     position: absolute;
-    background-color: #66cccc;
+    background-color: $VeertienBlue;
     width: 100%;
     height: 2px;
     transform: scaleX(0);
@@ -87,17 +87,17 @@
     text-align: center;
     margin: 2.5rem auto 3rem;
     padding: 1rem 5rem;
-    background: black;
-    color: #fbfbfb;
+    background: $VeertienBlack;
+    color: $VeertienWhite;
     font: inherit;
-    border: .5rem solid #fbfbfb;
+    border: .5rem solid rgb(243, 243, 243);
     outline: none;
     cursor: pointer;
     border-radius: 3rem;
 }
 
 .form__button:hover {
-    background: #66cccc;
+    background: $VeertienBlue;
     transition: .4s;
 }
 
@@ -110,7 +110,7 @@
 
 .form__switch a {
     text-decoration: none;
-    color: #66cccc;
+    color: $VeertienBlue;
 }
 
 .form__switch a:hover {
