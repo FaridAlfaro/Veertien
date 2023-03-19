@@ -411,7 +411,7 @@ a {
 }
 
 .cta:hover {
-  background: linear-gradient(to right, #66cccc, #ec008c);
+  background: #66cccc;
   transition: 0.2s ease-in-out;
   color: #fafafa;
   animation: forwards;
@@ -434,11 +434,19 @@ a {
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  transition: background-color 0.5s ease-in-out; /* Agregamos una transición suave para el cambio de color */
+  transition: background-color 0.3s ease; /* Agrega una transición suave al cambio de color de fondo */
 }
 
-.paso.active {
-  background-color: #f00; /* Cambiamos el color de fondo cuando la clase "active" está presente */
+.pasoN {
+  color: #ebebeb;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.pasosCopy {
+  margin: 36px 0;
+  text-align: center;
 }
 
 .form {
@@ -460,7 +468,7 @@ a {
   left: 0;
   width: 100%;
   height: 10rem;
-  background: linear-gradient(to left, #66cccc, #e0148e);
+  background: black;
   border-radius: 1rem 1rem 100% 100%;
   z-index: -1;
 }
@@ -529,7 +537,7 @@ a {
   display: block;
   margin: 2.5rem auto 3rem;
   padding: 1rem 5rem;
-  background: linear-gradient(to left, #66cccc, #ec008c);
+  background: black;
   color: #fbfbfb;
   font: inherit;
   border: 0.5rem solid #fbfbfb;
@@ -539,7 +547,8 @@ a {
 }
 
 .form__button:hover {
-  background: linear-gradient(to right, #66cccc, #ec008c);
+  background: #66cccc;
+  transition: 0.4s;
 }
 
 .form__switch {

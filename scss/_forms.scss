@@ -17,8 +17,7 @@
     left: 0;
     width: 100%;
     height: 10rem;
-    background: linear-gradient(to left, #66cccc,
-            #e0148e);
+    background: black;
     border-radius: 1rem 1rem 100% 100%;
     z-index: -1;
 }
@@ -87,8 +86,7 @@
     display: block;
     margin: 2.5rem auto 3rem;
     padding: 1rem 5rem;
-    background: linear-gradient(to left, #66cccc,
-            #ec008c);
+    background: black;
     color: #fbfbfb;
     font: inherit;
     border: .5rem solid #fbfbfb;
@@ -98,8 +96,8 @@
 }
 
 .form__button:hover {
-    background: linear-gradient(to right, #66cccc,
-            #ec008c);
+    background: #66cccc;
+    transition: .4s;
 }
 
 .form__switch {
