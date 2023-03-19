@@ -1,9 +1,8 @@
-window.addEventListener('load', function() {
-  var preloader = document.getElementById('preloader');
-  preloader.style.display = 'none';
+window.addEventListener("load", function() {
+  setTimeout(function(){
+    document.querySelector('#preloader').style.display = 'none';
+  }, 3000);
 });
-
-
 
 const iconoMenu = document.querySelector('#icono-menu'),
       menu = document.querySelector('#menu');
