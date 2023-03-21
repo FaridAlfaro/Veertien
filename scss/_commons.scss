@@ -1,151 +1,202 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  font-family: 'Amiko', sans-serif;
+body {
+  font-family: "Amiko", sans-serif;
 }
-a:link, a:visited, a:active {
-    text-decoration:none;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
 }
-.title{
-    display: inline-block;
-    padding: 5vh;
-    text-align: center;
-    color: $VeertienBlack;
+.title {
+  display: inline-block;
+  padding: 5vh;
+  text-align: center;
+  color: $VeertienBlack;
 }
-.copy{
+.copy {
   display: inline-block;
   text-align: left;
   padding: 0 3vh;
   padding-bottom: 3vh;
 }
-.titleB{
+.titleB {
   text-align: center;
   padding: 3vh 0;
   color: $VeertienWhite;
 }
-.subtitle{
+.subtitle {
   margin: 0 20px;
   padding: 0;
 }
-main{
+main {
   background-color: $VeertienWhite;
 }
-.skills{
+.skills {
   background-color: $VeertienBlack;
 }
-.img_carousel{
-    height: 200px;
-    scale: 1.5;
+.img_carousel {
+  height: 200px;
+  scale: 1.5;
 }
-.carousel{
-    display: block;
+.carousel {
+  display: inline-block;
 }
 .content {
-  width:240px;
-  font-size:20px;
-  line-height:40px;
-  color:$VeertienWhite;
-  height:40px;
+  width: 240px;
+  font-size: 20px;
+  line-height: 40px;
+  color: $VeertienWhite;
+  height: 40px;
   position: relative;
-  margin:10vh auto;
-  
+  margin: 10vh auto;
+
   &:before {
-    content:'[';
-    position:absolute;
-    left:-50px;
-    line-height:40px;
+    content: "[";
+    position: absolute;
+    left: -50px;
+    line-height: 40px;
   }
   &:after {
-    content:']';
-    position:absolute;
-    right:-50px;
-    line-height:40px;
+    content: "]";
+    position: absolute;
+    right: -50px;
+    line-height: 40px;
   }
-  &:after, &:before {
-    color:$VeertienWhite;
-    font-size:42px;
-    animation:2s linear 0s normal none infinite opacity;
-    -webkit-animation:2s ease-out 0s normal none infinite opacity;
-    -moz-animation:2s ease-out 0s normal none infinite opacity;
-    -o-animation:2s ease-out 0s normal none infinite opacity;
+  &:after,
+  &:before {
+    color: $VeertienWhite;
+    font-size: 42px;
+    animation: 2s linear 0s normal none infinite opacity;
+    -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+    -moz-animation: 2s ease-out 0s normal none infinite opacity;
+    -o-animation: 2s ease-out 0s normal none infinite opacity;
   }
 }
 
 .visible {
-  float:left;
-  font-weight:600;
-  overflow:hidden;
-  height:40px;   
+  float: left;
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
 }
 
 .p_nav {
-  display:inline;
-  float:left;
-  margin:0;
+  display: inline;
+  float: left;
+  margin: 0;
 }
 
 .ul_nav {
-  margin-top:0;
-  padding-left:100px;
-  text-align:left;
-  list-style:none;
-  animation:6s linear 0s normal none infinite change;
-  -webkit-animation:6s linear 0s normal none infinite change;
-  -moz-animation:6s linear 0s normal none infinite change;
-  -o-animation:6s linear 0s normal none infinite change;
+  margin-top: 0;
+  padding-left: 100px;
+  text-align: left;
+  list-style: none;
+  animation: 6s linear 0s normal none infinite change;
+  -webkit-animation: 6s linear 0s normal none infinite change;
+  -moz-animation: 6s linear 0s normal none infinite change;
+  -o-animation: 6s linear 0s normal none infinite change;
 }
 
 .ul_nav .li_mav {
-  line-height:40px;
-  margin:0;
+  line-height: 40px;
+  margin: 0;
 }
 
 @-webkit-keyframes opacity {
-  0%   {opacity:0;}
-  50%  {opacity:1;}
-  100% {opacity:0;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes opacity {
-  0%   {opacity:0;}
-  50%  {opacity:1;}
-  100% {opacity:0;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes change {
-  0%   {margin-top:0;}
-  15%  {margin-top:0;}
-  25%  {margin-top:-40px;}
-  40%  {margin-top:-40px;}
-  50%  {margin-top:-80px;}
-  65%  {margin-top:-80px;}
-  75%  {margin-top:-40px;}
-  85%  {margin-top:-40px;}
-  100% {margin-top:0;}
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 @keyframes change {
-  0%   {margin-top:0;}
-  15%  {margin-top:0;}
-  25%  {margin-top:-40px;}
-  40%  {margin-top:-40px;}
-  50%  {margin-top:-80px;}
-  65%  {margin-top:-80px;}
-  75%  {margin-top:-40px;}
-  85%  {margin-top:-40px;}
-  100% {margin-top:0;}
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
-.descubrinos{
+.descubrinos {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.filosofia{
+.filosofia {
   display: flex;
   flex-wrap: wrap;
   margin: 100px 20px;
@@ -154,37 +205,37 @@ main{
   background-size: cover;
   background-image: url(/img/sea-7423274_640.jpg);
 }
-.filo_img{
+.filo_img {
   filter: invert(1);
 }
-.filo_imgb{
+.filo_imgb {
   margin: 100px 0;
   height: 200px;
-  transition: .5s;
+  transition: 0.5s;
 }
-.front_filo_img{
+.front_filo_img {
   position: relative;
 }
-.back_filo_img{
-  position:absolute;
+.back_filo_img {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 
-.filo_imgb:active{
+.filo_imgb:active {
   translate: 35vw;
 }
 
-.cards{
+.cards {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 100px 0;
 }
-.card_{
+.card_ {
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -194,41 +245,41 @@ main{
   width: 80%;
   margin: 20px;
 }
-.card_body{
+.card_body {
   margin: 1rem;
-  color:$VeertienWhite ;
+  color: $VeertienWhite;
 }
-.card_title{
-font-weight: 700;
+.card_title {
+  font-weight: 700;
 }
 
-.card_img{
+.card_img {
   height: 400px;
   object-fit: cover;
 }
-a{
-  text-decoration:none;
+a {
+  text-decoration: none;
 }
-.boton{
+.boton {
   display: inline-block;
   background-color: $VeertienWhite;
   padding: 20px;
   text-decoration: none;
   color: $VeertienBlack;
   border-radius: 8px;
-  transition: .3s;
+  transition: 0.3s;
   font-weight: 500;
 }
-.boton:hover{
+.boton:hover {
   background-color: $VeertienBlue;
   color: $VeertienWhite;
 }
-.caja_video{
+.caja_video {
   position: relative;
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-.video{
+.video {
   width: 100vw;
 }

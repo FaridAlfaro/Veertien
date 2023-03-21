@@ -10,7 +10,9 @@ body {
   font-family: "Amiko", sans-serif;
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
 }
 
@@ -53,7 +55,7 @@ main {
 }
 
 .carousel {
-  display: block;
+  display: inline-block;
 }
 
 .content {
@@ -302,83 +304,108 @@ a {
   width: 100vw;
 }
 
-.logo img {
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.caja {
-  background-color: #ebebeb;
-}
-
-.nav_container {
-  height: 56px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Estilos para el ícono del Menú */
-.icono-menu {
-  position: fixed;
-  margin-right: calc(100vw - 7vh);
-  z-index: 10;
-}
-
-.icono-menu img {
-  vertical-align: top;
-  width: 22px;
-  cursor: pointer;
-}
-
-/* Estilos para el contenedor del Menú */
-.cont-menu {
-  background-color: #1b1b1b;
-  box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
-  width: 400px;
-  height: 100vh;
+nav {
+  transition: all ease-in-out 1s;
+  background: #ebebeb;
+  border-bottom: 2.5px solid #44b9e5;
+  padding: 10px 20px;
+  width: 100%;
+  height: 65px;
   position: fixed;
   top: 0;
   left: 0;
-  transition: all 0.5s ease;
-  z-index: 8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
 }
 
-/* Estilos por agregar en JavaScript */
-.active_nav {
-  transform: translate(-600px);
+nav .logo {
+  width: 100px;
 }
 
-/* Estilos para el listado del Menú */
-.cont-menu .ul_hamburguer {
-  padding: 100px 0px 20px 0px;
+nav ul {
   list-style: none;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  background: #44b9e5;
+  width: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.8s ease-out;
+  z-index: 50;
 }
 
-.cont-menu .ul_hamburguer .li_hamburguer {
+nav ul .opciones {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 80;
+}
+
+nav ul .opciones li {
+  width: 180px;
+  margin: 20px 0;
+}
+
+nav ul .opciones li a {
+  font-weight: 500;
   color: #ebebeb;
-  display: block;
-  font-size: 25px;
-  text-decoration: none;
-  padding: 10px 50px;
+  padding: 10px 30px;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in 0.8s;
+}
+
+nav ul .opciones li a:hover {
+  border-bottom: 2px solid #df4434;
+  color: #ebebeb;
+}
+
+nav .menu {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  z-index: 20;
   cursor: pointer;
 }
 
-.cont-menu .ul_hamburguer .li_hamburguer:hover {
-  background-color: #44b9e5;
-  transition: 0.5s;
-  color: #ebebeb;
-  font-weight: 500;
+nav .menu span {
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  background: #1b1b1b;
+  transition: all 0.25s ease;
+  transform-origin: 0px 100%;
 }
 
-.caja__main {
-  height: 85vh;
-  width: 100%;
-  display: inline-block;
-  padding: 0;
+nav .menu span:nth-child(2) {
+  top: calc(50% - 2px);
+}
+
+nav .menu span:nth-child(3) {
+  bottom: 0;
+}
+
+.animacionMenu span:nth-child(1) {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.animacionMenu span:nth-child(2) {
+  opacity: 0;
+}
+
+.animacionMenu span:nth-child(3) {
+  transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.activeMenu {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .caja__textos {
@@ -424,14 +451,12 @@ a {
 .carousel-control-next-icon:hover {
   transition: 0.3s;
   scale: 1.3;
-  background-color: #44b9e5;
   border-radius: 100%;
 }
 
 .carousel-control-prev-icon:hover {
   transition: 0.3s;
   scale: 1.3;
-  background-color: #44b9e5;
   border-radius: 100%;
 }
 

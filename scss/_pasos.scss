@@ -1,28 +1,28 @@
-.pasos{
-    height: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 36px;
+.pasos {
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 36px;
 }
-.paso{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $VeertienBlack;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    transition: background-color 0.3s ease; /* Agrega una transición suave al cambio de color de fondo */
+.paso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $VeertienBlack;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  transition: background-color 0.3s ease; /* Agrega una transición suave al cambio de color de fondo */
 }
-.pasoN{
-    color: $VeertienWhite;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
+.pasoN {
+  color: $VeertienWhite;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
-.pasosCopy{
-    margin: 36px 0;
-    text-align: center;
+.pasosCopy {
+  margin: 36px 0;
+  text-align: center;
 }
