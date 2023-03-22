@@ -4,42 +4,6 @@ window.addEventListener("load", function () {
   }, 100);
 });
 
-const iconoMenu = document.querySelector("#icono-menu");
-const menu = document.querySelector("#menu");
-let isOpen = false;
-
-function cerrarMenu() {
-  if (isOpen) {
-    menu.classList.remove("active_nav");
-    document.body.classList.remove("opacity");
-    isOpen = false;
-  }
-}
-
-const enlacesMenu = document.querySelectorAll("#menu a");
-enlacesMenu.forEach((enlace) => {
-  enlace.addEventListener("click", (e) => {
-    cerrarMenu();
-  });
-});
-
-iconoMenu.addEventListener("click", (e) => {
-  e.preventDefault();
-  // Alternamos estilos para el menú y body
-  menu.classList.toggle("active_nav");
-  document.body.classList.toggle("opacity");
-  // Alternamos su atributo 'src' para el ícono del menú
-  e.target.setAttribute("src", isOpen ? "/img/3869892-200.png" : "/img/close-circle-line.png");
-  isOpen = !isOpen;
-});
-
-window.addEventListener("scroll", () => {
-  cerrarMenu();
-});
-
-
-
-
 var Textos = new Array();
 // Enter the names of the images below
 Textos[0] = "Desarrollo<br>web";
