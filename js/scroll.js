@@ -15,7 +15,7 @@ window.addEventListener("scroll", function() {
         /* --si es mayor o igual se muesta */
             $nav.style.display = "";
             $nav.style.backgroundColor = "#44b9e5";
-            $nav.style.top = "0px";
+            $nav.style.top = "0px";S
             console.log('Ubicacion Principal')
             console.log(ubicacionPrincipal)
             console.log('desplazamiento')
