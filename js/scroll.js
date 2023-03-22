@@ -12,9 +12,10 @@ let scene = new ScrollMagic.Scene({
 .on("update", function(e) {
     /* --donde nos encontramos actualmente */
     let desplazamientoActual = e.scrollPos;
+    let ubicacionPrincipal = window.pageYOffset;
 
     /* --condicion para ocultar o mostrar el menu */
-    if (desplazamientoActual === 0 && window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    if (desplazamientoActual === 0) {
         $nav.style.display = "";
         $nav.style.backgroundColor = "transparent";
         logo.style.filter = "brightness(100)";
