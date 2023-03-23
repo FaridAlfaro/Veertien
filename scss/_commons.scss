@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 body {
+  font-size: 1rem;
   font-family: "Amiko", sans-serif;
 }
 a:link,
@@ -49,7 +50,7 @@ main {
 }
 .content {
   width: 240px;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 40px;
   color: $VeertienWhite;
   height: 40px;

@@ -11,9 +11,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10; }
-  nav .logo {
-    width: 120px; }
+  z-index: 10; 
+}
+  .logo_nav {
+    height: 22px; 
+}
   nav ul {
     list-style: none;
     position: absolute;
