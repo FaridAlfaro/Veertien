@@ -1,8 +1,19 @@
-const mostrarMenu = document.querySelector('#menu')
-const contenidoMenu = document.querySelector('#options')
+const shareButton = document.querySelectorAll("button.shareButton")
 
+shareButton[0].addEventListener("click", (e) => {
+    for( let i=0; i < shareButton.length; i++ ) {
+       shareButton[i].classList.toggle("open")
+       shareButton[0].classList.remove("sent")
+    }
+})
 
-mostrarMenu.addEventListener('click', () => {
-    mostrarMenu.classList.toggle('animacionMenu')
-    contenidoMenu.classList.toggle('activeMenu')
-});
+for( let i=1; i < shareButton.length; i++ ) {
+   
+   shareButton[i].addEventListener("click", (e) => {
+      
+   for( let i=0; i < shareButton.length; i++ ) {
+      shareButton[i].classList.toggle("open")
+   }
+   shareButton[0].classList.toggle("sent")
+   })
+}

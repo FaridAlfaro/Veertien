@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
   setTimeout(function () {
     document.querySelector("#preloader").style.display = "none";
-  }, 100);
+  }, 2000);
 });
 
 var Textos = new Array();

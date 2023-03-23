@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
   let controller = new ScrollMagic.Controller();
-
   let $nav = document.querySelector("nav");
   let logo = document.getElementById("logo1");
   let ubicacionPrincipal = window.pageYOffset;
