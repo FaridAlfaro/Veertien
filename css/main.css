@@ -305,6 +305,17 @@ a {
   width: 100vw;
 }
 
+.section2 {
+  padding: 100px 0;
+  background-color: #1b1b1b;
+  display: inline-block;
+}
+
+.mockup {
+  object-fit: cover;
+  width: 100vw;
+}
+
 nav {
   transition: all ease-in-out 1s;
   background: #ebebeb;
