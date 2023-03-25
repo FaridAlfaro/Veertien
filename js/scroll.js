@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   let controller = new ScrollMagic.Controller();
   let $nav = document.querySelector("nav");
-  let logo = document.getElementById("logo1");
   let ubicacionPrincipal = window.pageYOffset;
+  let botonFlotante = document.getElementById("shareButtonJS")
 
   let scene = new ScrollMagic.Scene({
     triggerElement: 'body',
@@ -15,16 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /* --condicion para ocultar o mostrar el menu */
     if (desplazamientoActual === 0) {
+      botonFlotante.style.backgroundColor = "transparent";
       $nav.style.backgroundColor = "transparent";
-      logo.style.filter = "brightness(100)";
     } else if (ubicacionPrincipal >= desplazamientoActual) {
-      $nav.style.backgroundColor = "#44b9e5";
+      botonFlotante.style.backgroundColor = "";
+      $nav.style.backgroundColor = "#0A0D13";
       $nav.style.top = "0px";
       console.log('Ubicacion Principal');
       console.log(ubicacionPrincipal);
       console.log('desplazamiento');
       console.log(desplazamientoActual);
     } else {
+      botonFlotante.style.backgroundColor = "";
       $nav.style.top = "-80px";
       $nav.style.backgroundColor = "transparent";
       console.log('Ubicacion Principal');

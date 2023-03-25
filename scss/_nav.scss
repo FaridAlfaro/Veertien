@@ -1,7 +1,6 @@
 
 nav {
   transition: all ease-in-out 1s;
-  background: $VeertienWhite;
   padding: 10px 20px;
   width: 100%;
   height: 56px;
@@ -9,72 +8,9 @@ nav {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   z-index: 10; 
 }
   .logo_nav {
-    height: 22px; 
+    height: 1.6rem; 
 }
-  nav ul {
-    list-style: none;
-    position: absolute;
-    top: 65px;
-    right: 0;
-    background: $VeertienBlue;
-    width: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: .5s step-end;
-    z-index: 50; }
-    nav ul .opciones {
-      width: 100%;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 80; }
-      nav ul .opciones li {
-        width: 180px;
-        margin: 20px 0; }
-        nav ul .opciones li a {
-          font-weight: 500;
-          color: $VeertienWhite;
-          padding: 10px 30px;
-          border-bottom: 2px solid transparent;
-          transition: all ease-in .8s; }
-          nav ul .opciones li a:hover {
-            border-bottom: 2px solid $VeertienRed;
-            color: $VeertienWhite; }
-  nav .menu {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    position: relative;
-    z-index: 20;
-    cursor: pointer; }
-    nav .menu span {
-      width: 100%;
-      height: 3px;
-      border-radius: 4px;
-      display: block;
-      position: absolute;
-      background: $VeertienWhite;
-      transition: all 0.25s ease;
-      transform-origin: 0px 100%; }
-    nav .menu span:nth-child(2) {
-      top: calc(50% - 2px); }
-    nav .menu span:nth-child(3) {
-      bottom: 0; }
-
-.animacionMenu span:nth-child(1) {
-  transform: rotate(45deg) translate(-2px, 1px); }
-
-.animacionMenu span:nth-child(2) {
-  opacity: 0; }
-
-.animacionMenu span:nth-child(3) {
-  transform: rotate(-45deg) translate(-3px, 3px); }
-
-.activeMenu {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
