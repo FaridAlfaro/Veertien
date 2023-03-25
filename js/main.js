@@ -4,6 +4,7 @@ window.addEventListener("load", function () {
   }, 2000);
 });
 
+
 var Textos = new Array();
 // Enter the names of the images below
 Textos[0] = "Desarrollo<br>web";
@@ -12,7 +13,7 @@ Textos[2] = "Diseño<br>multimedia";
 
 var nuevoTexto = -1; // para empezar en el primer texto -1, con 0 comienza por mostrar el segundo
 var totalTextos = Textos.length;
-var fadeDuration = 3000; // duración de la animación en milisegundos
+var fadeDuration = 2000; // duración de la animación en milisegundos
 
 function repetir() {
   nuevoTexto++;
@@ -91,3 +92,5 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
 }
 
 setInterval(updateGradient,10);
+
+

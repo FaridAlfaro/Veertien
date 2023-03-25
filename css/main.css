@@ -15,6 +15,13 @@ body {
   font-family: "Amiko", sans-serif;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 a:link,
 a:visited,
 a:active {
@@ -23,16 +30,18 @@ a:active {
 
 .title {
   font-size: 2.5rem;
-  display: inline-block;
-  padding: 5vh;
-  text-align: center;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #0A0D13;
 }
 
 .copy {
   font-size: 1rem;
   display: inline-block;
-  text-align: left;
+  text-align: center;
+  text-justify: auto;
   padding: 0 3vh;
   padding-bottom: 3vh;
 }
@@ -61,6 +70,25 @@ a:active {
   color: #F8FAFA;
 }
 
+.title_button_container {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_button {
+  font-size: 1rem;
+  color: #F8FAFA;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.title_button:hover {
+  color: #00B0B9;
+}
+
 nav {
   transition: all ease-in-out 1s;
   padding: 10px 20px;
@@ -78,6 +106,34 @@ nav {
   height: 1.6rem;
 }
 
+.section0 {
+  background-color: #0A0D13;
+  margin: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 10, 0);
+  border: solid 0;
+}
+
+.div_efecto {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #00B0B9, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: glow 2500ms linear infinite 2000ms;
+  animation: glow 2500ms linear infinite 2000ms;
+}
+
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #00B0B9;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #00B0B9;
+  }
+}
 .carousel-caption {
   display: flex;
   top: 0;
@@ -141,43 +197,6 @@ nav {
 .mockup {
   object-fit: cover;
   width: 100vw;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 0;
-}
-
-.card_ {
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #0A0D13;
-  width: 80%;
-  margin: 20px;
-}
-
-.card_body {
-  margin: 1rem;
-  color: #F8FAFA;
-}
-
-.card_title {
-  font-weight: 700;
-}
-
-.card_img {
-  height: 400px;
-  object-fit: cover;
-}
-
-a {
-  text-decoration: none;
 }
 
 i {

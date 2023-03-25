@@ -1,0 +1,28 @@
+.section0{
+    background-color: $VeertienBlack;
+    margin: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 10, 0);
+    border: solid 0;
+}
+
+.div_efecto {
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, $VeertienBlue, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation:  glow 2500ms linear infinite 2000ms;
+            animation:  glow 2500ms linear infinite 2000ms;
+  }
+
+  @-webkit-keyframes glow {
+    40% {
+      text-shadow: 0 0 8px $VeertienBlue;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px $VeertienBlue;
+    }
+  }
