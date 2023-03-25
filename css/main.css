@@ -207,6 +207,136 @@ nav {
   width: 100vw;
 }
 
+.tab-container h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em 0;
+  color: #0A0D13;
+}
+.tab-container p {
+  margin: 1rem 0;
+}
+.tab-container .tab-list {
+  position: relative;
+  padding: 2px 5px 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+}
+.tab-container .tab-list.navigation-selected button:focus:not(:focus-visible) {
+  outline: 2px solid #5a5a5a;
+}
+.tab-container .tab-list .follow {
+  display: inline-flex;
+  font-weight: bold;
+  height: 27px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 55px;
+  z-index: 1;
+  transition: left 0.25s ease-out, width 0.25s ease;
+}
+.tab-container .tab-list .tab {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #0A0D13;
+  border: 0;
+  border-radius: 15px;
+  font-size: 0.875rem;
+  padding: 0.7rem 8px;
+  transition: color 0.25s ease-out 0.125s;
+}
+.tab-container .tab-list .tab .tab span {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+  color: #0A0D13;
+  font-weight: 700;
+}
+.tab-container .tab-list .tab.is-keyboard-selected:focus:not(:focus-visible) {
+  outline: 2px solid #5a5a5a;
+}
+.tab-container .tab-list .tab:focus:not(:focus-visible) {
+  outline: none;
+}
+.tab-container .tab-list .tab.active {
+  color: #00B0B9;
+}
+.tab-container .tab-list .tab:last-child {
+  margin-right: 0;
+}
+.tab-container .tab-content-wrapper {
+  position: relative;
+  display: flex;
+}
+.tab-container .tab-content {
+  display: none;
+  background-color: #0A0D13;
+  margin-top: 0.2rem;
+}
+.tab-container .tab-content.tab-active {
+  display: block;
+}
+.tab-container .tab-content:focus:not(:focus-visible) {
+  outline: none;
+}
+.tab-container .tab-content.is-keyboard-selected:focus-visible {
+  outline: none;
+}
+
+.cards {
+  margin: 0 auto;
+  padding: min(5%, 2.5rem) 0;
+  justify-content: center;
+  width: min(90%, 600px);
+}
+
+.cards span {
+  color: #F8FAFA;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.tab-container .tab-list .tab.active {
+  color: #0A0D13;
+  background: #00B0B9;
+}
+
+.widget-container {
+  padding: 2rem;
+  border-radius: 15px;
+  background: rgba(10, 13, 19, 0.062745098);
+  box-shadow: 0 3px 60px black;
+  box-shadow: none;
+}
+
+.tab-container .tab-content.tab-active {
+  display: block;
+  background: transparent;
+  color: #0A0D13;
+}
+
+.tab-content-wrapper img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
 i {
   font-size: 2.4rem;
 }
