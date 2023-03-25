@@ -22,6 +22,10 @@ section {
   align-items: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a:link,
 a:visited,
 a:active {
@@ -87,6 +91,10 @@ a:active {
 
 .title_button:hover {
   color: #00B0B9;
+}
+
+.carousel-control-next-icon .carousel-control-prev-icon {
+  display: none;
 }
 
 nav {
@@ -478,26 +486,6 @@ i {
     color: #00B0B9;
   }
 }
-.challenge {
-  width: 541px;
-  height: 22px;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  top: 569.5px;
-  left: 755px;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-
-.challenge .number {
-  float: right;
-}
-
-.challenge .daily {
-  float: left;
-}
-
 .content_btf {
   z-index: 999;
   bottom: 0;
@@ -558,6 +546,7 @@ i {
   -webkit-transform: scale(1.1) translateY(-3px);
   transform: scale(1.1) translateY(-3px);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: #00B0B9;
 }
 
 .shareButton:active, .shareButton.open:active {
@@ -608,6 +597,43 @@ i {
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
+}
+
+.progress-bar-container {
+  font-size: 1rem;
+  font-weight: 700;
+  position: fixed;
+  width: 56px;
+  height: 100px;
+  margin-top: calc(50vh - 100px);
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  translate: -30px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+.progress-bar-container a {
+  color: #F8FAFA;
+}
+
+.linkNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh 0;
+  transform: rotate(270deg);
+  translate: 0.9rem;
+}
+
+.progress-bar-text span.active {
+  color: #00B0B9;
 }
 
 /*# sourceMappingURL=main.css.map */

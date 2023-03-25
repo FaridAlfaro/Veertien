@@ -18,6 +18,9 @@ section{
   justify-content: center;
   align-items: center;
 }
+html{
+  scroll-behavior: smooth;
+}
 a:link,
 a:visited,
 a:active {
@@ -76,4 +79,8 @@ a:active {
 }
 .title_button:hover{
   color: $VeertienBlue;
+}
+
+.carousel-control-next-icon .carousel-control-prev-icon{
+  display: none;
 }

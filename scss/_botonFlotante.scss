@@ -1,21 +1,3 @@
-.challenge {
-  width: 541px;
-  height: 22px;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  top: 569.5px;
-  left: 755px;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-}
-.challenge .number {
-  float: right;
-}
-.challenge .daily {
-  float: left;
-}
-
 .content_btf {
   z-index: 999;
   bottom: 0;
@@ -72,6 +54,7 @@
   -webkit-transform: scale(1.1) translateY(-3px);
           transform: scale(1.1) translateY(-3px);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: $VeertienBlue;
 }
 .shareButton:active, .shareButton.open:active {
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAMAAABhTZc9AAABAlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmZma5ubm4uLi8vLy6urrT09PU1NTS0tLS0tLT09PZ2dnY2Njb29vc3Nzd3d3g4ODf39/f39/h4eHa2trh4eHY2Nja2trg4ODa2tri4uLj4+PX19fZ2dnX19fk5OTl5eXl5eXn5+fo6Ojo6Ojm5ubp6enq6urs7Ozo6Ojt7e3u7u7v7+/p6eno6Ojp6enr6+vq6urq6urc3Nzb29vc3Nzm5ubm5ubk5OTl5eXk5OTm5ubd3d3e3t7d3d3e3t7f39/e3t7f39/e3t7e3t7d3d2Z9AvaAAAAVnRSTlMAAQIDBAUGBwgJCgsMDQ4PEBk+QUFDXV9gYWNscHB2eH2AgYaJiYqKiouLi4yMjY2Sk5WYmZqam52en6KisLGxsbKztre3v8DIyMnJ09PV1tfY4OXm50OBxC8AAAFqSURBVCjPjZPZSsNAFIY7WyZJXQpFLFpEn0IoxRbfW0VFUXwDwStRW6RKUUkyq2cmUxPXOJNcHL6c/6xBrb8O+mLaXygKhvXPZ4paCCFn2Za1dsEDBYQwXKAGrvugosAIJrikRhsdMFpAQmm/l1CVPdwppY3xGPkXA+PDzGQGJ4RcCMddbE8xpqw9mAmICLF59zSTCrzLOhCmNNmbaA3hvNE7EoBB21HQ5ePnXGorJWOIsKR9VoB2SQmJdjbnQonC+caMRp2bewFKvguEsl30UuhXr0yWCF+2l1I5y1EWjZ6EKHIoBGMS84h3ToSs6P5UirwAMQjD44itH9bphy9Q8I1Xa77f4q6oqxDX59zfhpxl7iiPIOfraci5rHc0z6p607RWL7SH8fFEufY4g2wcCLXoVdnndDgryj7H3eO86nOYERsYmWsaE3yu6jNy2o6vbaVUvd0+Agvj/8duNOxVw0427HPTv/DTeQcndQotgtF9KQAAAABJRU5ErkJggg==), auto;
@@ -119,4 +102,44 @@
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
+}
+
+.progress-bar-container {
+  font-size: 1rem;
+  font-weight: 700;
+  position: fixed;
+  width: 56px;
+  height: 100px;
+  margin-top: calc(50vh - 100px);
+  z-index: 999;
+  a{
+    color: $VeertienWhite;
+  }
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  translate: -30px;
+  // transition: ease-in 1s;
+  // transition-delay: 1s;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+.linkNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh 0;
+  //justify-content: center;
+  //align-items: center;
+  transform: rotate(270deg);
+  translate: .9rem;
+}
+
+.progress-bar-text span.active {
+  color: $VeertienBlue;
 }
