@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+}
+.container{
+    display: flex;
+    gap: 10px;
+}
+.caja{
+    background: red;   
+    height: 200px;
+    width: 200px;
+}
+
+.caja-2{
+    background: blue;
+}

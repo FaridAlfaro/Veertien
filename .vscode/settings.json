@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "livePreview.customExternalBrowser": "Edge",
+    "livePreview.defaultPreviewPath": "/index.html",
+    "livePreview.openPreviewTarget": "External Browser",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": ""
+    
 }

@@ -4,12 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 main {
   background-color: $VeertienWhite;
 }
 body {
   font-size: 1rem;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
   font-family: "Amiko", sans-serif;
 }
 section{
@@ -27,16 +31,13 @@ a:active {
   text-decoration: none;
 }
 .title {
-  font-size: 2.5rem;
+  text-align: center;
+  font-size: 3rem;
   margin: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: $VeertienBlack;
 }
 .copy {
   font-size: 1rem;
-  display: inline-block;
   text-align:center;
   text-justify: auto;
   padding: 0 3vh;
@@ -49,7 +50,6 @@ a:active {
   color: $VeertienWhite;
 }
 .boton {
-  display: inline-block;
   background-color: $VeertienWhite;
   padding: 20px;
   text-decoration: none;
@@ -72,7 +72,7 @@ a:active {
 
 }
 .title_button{
-  font-size: 1rem;
+  font-size: 1,4rem;
   color: $VeertienWhite;
   text-decoration: none;
   transition: .5s;

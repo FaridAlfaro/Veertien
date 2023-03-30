@@ -136,9 +136,9 @@
 .widget-container{
   padding: 2rem;
   border-radius: 15px;
-  background:#0A0D1310;
-  box-shadow: 0 3px 60px black;
-  box-shadow:none;
+  box-shadow: 0 0 14px rgba(0,0,0,0.14);
+-webkit-box-shadow: 0 0 14px rgba(0,0,0,0.14);
+-moz-box-shadow: 0 0 14px rgba(0,0,0,0.14);
 }
 
 .tab-container .tab-content.tab-active {

@@ -16,7 +16,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   </head>
-  <body style="display: flex; flex-direction: column; justify-content: space-between; height: 100vh;">
+  <body>
     <div id="preloader">
       <img src="/img/svg/faviconRecurso 42.svg" alt="" id="loader" />
     </div>
@@ -51,13 +51,13 @@
         </div>
       </div>
       <section id="section-1">
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide" data-interval="1000" data-ride="carousel" data-speed="500">
           <div class="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
-              class="active"
+              class="active slider"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -84,31 +84,26 @@
             <div class="carousel-item active">
               <video src="/img/videos/pexels-cottonbro-9669110.mp4" class="img_carousel d-block" autoplay loop></video>
               <div class="carousel-caption d-md-block">
-                <div class="caja__textos">
+              <div class="caja__textos">
                   <h5 class="title_section1">
                     <div class="title__active" id="text_rotate"></div>
                   </h5>
                   <p class="text">
-                    Bridamos servicios de alta
-                    <span class="text__active">calidad</span> que se adaptan a
-                    <span class="text__active">tus</span> necesidades
+                    <span class="text__active">Servicios</span> que se adaptan a<span class="text__active"><br>tus</span> necesidades
                   </p>
                   <a href="/nosotros.html" class="cta">Nuestros servicios</a>
-                </div>
               </div>
+            </div>
             </div>
             <div class="carousel-item">
               <video src="/img/videos/pexels-mart-production-7565887.mp4" class="img_carousel d-block" autoplay loop></video>
               <div class="carousel-caption d-md-block">
                 <div class="caja__textos">
                   <h5 class="title_section1">
-                    Algo <span class="text__active">más</span> que unas lineas
+                    <span class="text__active">+</span> que unas lineas
                     de codigo
                   </h5>
-                  <p class="text">
-                    Nos apasiona diseñar sitios web hermosos y eficientes que
-                    maximizan el valor de su negocio
-                  </p>
+                  <p class="text">Conoce nuestra filosofía</p>
                   <a href="/nosotros.html" class="cta">Nuestros servicios</a>
                 </div>
               </div>
@@ -118,12 +113,10 @@
               <div class="carousel-caption d-md-block">
                 <div class="caja__textos">
                   <h5 class="title_section1">
-                    <span class="text__active">Clean code</span>
+                    <span class="text__active">Clean & scalable code</span>
                   </h5>
                   <p class="text">
-                    Trabajamos con codigo limpio y con buenas practicas que
-                    permiten crear proyectos modulares que se adapten al
-                    <span class="text__active">crecimiento</span> de tu empresa
+                    <span class="text__active">Codigo limpio</span> y buenas<br>practicas
                   </p>
                   <a href="/nosotros.html" class="cta">Nuestros servicios</a>
                 </div>
@@ -134,17 +127,15 @@
               <div class="carousel-caption d-md-block">
                 <div class="caja__textos">
                   <h5 class="title_section1">
-                    <span class="text__active">Robots for people</span>
+                    <span class="text__active">Robots 4 people</span>
                   </h5>
-                  <p class="text">
-                    Trabajos activamente para poner el futuro al alcance de todos
-                  </p>
+                  <p class="text">El futuro al alcance de todos</p>
                   <a href="/nosotros.html" class="cta">Conoce 4teen</a>
                 </div>
               </div>
             </div>
           </div>
-          <button
+          <!-- <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions"
@@ -157,7 +148,7 @@
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
-          </button>
+          </button> -->
         </div>
       </section>
       <section id="section-2">
@@ -268,7 +259,7 @@
           </div>
         </div>
       </section>
-      <section class="" id="section3">
+      <section id="section-3">
         <div class="cards container">
           <div class="widget">
             <div class="widget-container">
@@ -381,7 +372,7 @@
         <div class="footer__top">
           <div class="company__info">
             <a href="#" class="company__logo"
-              ><img src="/logoRecurso 27.svg" alt="" class="imgFooter"
+              ><img src="/img/logo/logoblanco.svg" alt="" class="imgFooter"
             /></a>
             <p class="company__description">
               Combinamos la pasión por el arte y la tecnología de punta para
