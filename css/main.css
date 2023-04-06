@@ -8,14 +8,10 @@
 }
 
 main {
-  margin: 0;
-  padding: 0;
   background-color: #F8FAFA;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
