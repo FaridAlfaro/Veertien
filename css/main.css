@@ -8,10 +8,14 @@
 }
 
 main {
+  margin: 0;
+  padding: 0;
   background-color: #F8FAFA;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -101,7 +105,7 @@ a:active {
 nav {
   transition: all ease-in-out 1s;
   padding: 10px 20px;
-  width: 100%;
+  width: 100vw;
   height: 56px;
   position: fixed;
   top: 0;
@@ -126,7 +130,7 @@ nav {
 .manos {
   border-radius: 14px;
   width: inherit;
-  width: 100%;
+  width: 90vw;
   height: 400px;
   object-fit: cover;
 }
@@ -206,26 +210,6 @@ nav {
 .mockup {
   object-fit: cover;
   width: 100vw;
-}
-
-.miDiv {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-}
-
-.miDiv video {
-  position: absolute;
-  object-fit: cover;
-  height: inherit;
-  width: inherit;
-  z-index: 0;
-}
-
-.contenido {
-  position: relative;
-  z-index: 1;
-  /* Aquí puedes estilizar el contenido */
 }
 
 .tab-container h2 {
