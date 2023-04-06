@@ -83,8 +83,9 @@ a:active {
 }
 
 .title_button {
-  font-size: 1, 4rem;
-  color: #F8FAFA;
+  margin: 1rem;
+  font-size: 1.4rem;
+  color: #0A0D13;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -115,7 +116,6 @@ nav {
 }
 
 .section0 {
-  background-color: #0A0D13;
   margin: 2rem;
   padding-bottom: 2rem;
   border-radius: 1rem;
@@ -123,25 +123,14 @@ nav {
   border: solid 0;
 }
 
-.div_efecto {
-  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #00B0B9, transparent, transparent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-animation: glow 2500ms linear infinite 2000ms;
-  animation: glow 2500ms linear infinite 2000ms;
+.manos {
+  border-radius: 14px;
+  width: inherit;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
-@-webkit-keyframes glow {
-  40% {
-    text-shadow: 0 0 8px #00B0B9;
-  }
-}
-@keyframes glow {
-  40% {
-    text-shadow: 0 0 8px #00B0B9;
-  }
-}
 .img_carousel {
   object-fit: cover;
   height: 100vh;
@@ -158,9 +147,7 @@ nav {
 
 .caja__textos {
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -176,9 +163,9 @@ nav {
 }
 
 .text {
-  width: 80%;
-  margin: 0 0rem;
-  font-size: 1.4rem;
+  width: 100%;
+  margin: 0.3rem;
+  font-size: 1rem;
 }
 .text span {
   font-size: inherit;
@@ -219,6 +206,26 @@ nav {
 .mockup {
   object-fit: cover;
   width: 100vw;
+}
+
+.miDiv {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.miDiv video {
+  position: absolute;
+  object-fit: cover;
+  height: inherit;
+  width: inherit;
+  z-index: 0;
+}
+
+.contenido {
+  position: relative;
+  z-index: 1;
+  /* Aquí puedes estilizar el contenido */
 }
 
 .tab-container h2 {

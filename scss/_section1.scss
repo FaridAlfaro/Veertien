@@ -15,9 +15,10 @@
 
 .caja__textos{
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 2rem;
+  // top: 30%;
+  // left: 30%;
+  // transform: translate(-30%, -30%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,9 +34,9 @@
   transition: opacity 0.5s ease-in-out;
 }
 .text{
-  width: 80%;
-  margin: 0 0rem;
-  font-size: 1.4rem;
+  width: 100%;
+  margin: 0.3rem;
+  font-size: 1rem;
   span{
     font-size: inherit;
   }
