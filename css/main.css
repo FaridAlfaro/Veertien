@@ -115,7 +115,7 @@ nav {
   height: 1.4rem;
 }
 
-.section0 {
+.section_container {
   margin: 2rem;
   padding-bottom: 2rem;
   border-radius: 1rem;
@@ -125,7 +125,6 @@ nav {
 
 .manos {
   border-radius: 14px;
-  width: inherit;
   width: 90vw;
   height: 400px;
   object-fit: cover;
