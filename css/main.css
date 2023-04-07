@@ -876,72 +876,89 @@ i {
     color: #00B0B9;
   }
 }
-.container {
-  z-index: 99;
-  position: fixed;
-  min-height: 1000px;
-}
-
-a {
-  outline: 0;
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  position: static;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  color: #fff;
-  padding: 3em 5%;
-  position: relative;
-  width: 90%;
-  z-index: 2;
-}
-
 .menu-toggle {
-  margin-top: 8px;
   cursor: pointer;
-  float: right;
-  font-size: 0.875rem;
-  transition: all 0.3s ease-in-out;
-}
-.menu-toggle.open {
-  opacity: 0.5;
+  position: relative;
 }
 
-.menu-toggle-grippy {
-  scale: 0.9;
-  border-bottom: 5px solid #fff;
-  border-top: 5px solid #fff;
-  float: left;
-  line-height: 0;
-  margin-right: 1em;
-  padding: 5px 0;
-  text-indent: -999em;
-  width: 35px;
+.hamburger, .cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.menu-toggle-grippy:after {
-  background: #fff;
-  content: "";
+
+.hamburger span {
   display: block;
-  height: 5px;
+  width: 18px;
+  height: 2px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  position: relative;
 }
 
-.menu-toggle-label {
-  float: left;
-  font-weight: 700;
-  height: 25px;
-  letter-spacing: 1px;
-  line-height: 25px;
-  text-transform: uppercase;
+.hamburger span:last-child {
+  margin: 0;
+}
+
+.hamburger span:before, .hamburger span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #F8FAFA;
+  transform: translateX(-200%);
+  transition: transform ease 300ms;
+}
+
+.hamburger span:after {
+  transform: translateX(0);
+}
+
+.hamburger span:nth-child(2):before, .hamburger span:nth-child(2):after {
+  transition-delay: 75ms;
+}
+
+.hamburger span:last-child:before, .hamburger span:last-child:after {
+  transition-delay: 150ms;
+}
+
+.menu-toggle:hover .hamburger span:before {
+  transform: translateX(0);
+}
+
+.menu-toggle:hover .hamburger span:after {
+  transform: translateX(200%);
+}
+
+.menu-toggle.active .hamburger span:before {
+  transform: translateX(100%);
+}
+
+.menu-toggle.active .hamburger span:after {
+  transform: translateX(200%);
+}
+
+.cross span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #F8FAFA;
+  transform: translateY(50%) rotate(45deg) scaleX(0);
+  transition: transform ease 200ms;
+}
+
+.cross span:last-child {
+  transform: translateY(-50%) rotate(-45deg) scaleX(0);
+}
+
+.menu-toggle.active .cross span {
+  transition-delay: 450ms;
+  transform: translateY(50%) rotate(45deg) scaleX(1);
+}
+
+.menu-toggle.active .cross span:last-child {
+  transform: translateY(-50%) rotate(-45deg) scaleX(1);
 }
 
 .hidden-panel {

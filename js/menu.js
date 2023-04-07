@@ -41,3 +41,8 @@ closePanel.addEventListener('click', function () {
   document.body.classList.remove('panel-open');
   menuToggle.classList.remove('open');
 });
+$(document).ready(function(){
+	$('.menu-toggle').on('click',function(){
+		$('.menu-toggle').toggleClass('active');
+	});
+});
