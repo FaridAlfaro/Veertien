@@ -29,13 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let desplazamientoActual = e.scrollPos;
     /* --condicion para ocultar o mostrar el menu */
     if (desplazamientoActual === 0) {
-      progreso.style.backgroundColor = "transparent";
-      botonFlotante.style.backgroundColor = "transparent";
       $nav.style.backgroundColor = "transparent";
     } else if (ubicacionPrincipal >= desplazamientoActual) {
-      progreso.style.backgroundColor = "0A0D13";
-      botonFlotante.style.backgroundColor = "transparent";
-      botonFlotante.style.backgroundColor = "";
       $nav.style.backgroundColor = "#0A0D13";
       $nav.style.top = "0px";
       console.log('Ubicacion Principal');
@@ -43,8 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log('desplazamiento');
       console.log(desplazamientoActual);
     } else {
-      botonFlotante.style.backgroundColor = "";
-      progreso.style.backgroundColor = "0A0D13";
       $nav.style.top = "-80px";
       $nav.style.backgroundColor = "transparent";
       console.log('Ubicacion Principal');
@@ -59,19 +52,19 @@ document.addEventListener('DOMContentLoaded', function() {
   .addTo(controller);
 });
 
-const progressBarText = document.querySelectorAll('.progress-bar-text span');
+// const progressBarText = document.querySelectorAll('.progress-bar-text span');
 
-window.addEventListener('scroll', () => {
-  const { scrollTop } = document.documentElement;
+// window.addEventListener('scroll', () => {
+//   const { scrollTop } = document.documentElement;
   
-  progressBarText.forEach((text, index) => {
-    const sectionHeight = document.querySelector(`#section-${index + 1}`).offsetHeight;
-    const sectionTop = document.querySelector(`#section-${index + 1}`).offsetTop;
-    if (scrollTop >= sectionTop && scrollTop < (sectionTop + sectionHeight)) {
-      text.classList.add('active');
-    } else {
-      text.classList.remove('active');
-    }
-  });
-});
+//   progressBarText.forEach((text, index) => {
+//     const sectionHeight = document.querySelector(`#section-${index + 1}`).offsetHeight;
+//     const sectionTop = document.querySelector(`#section-${index + 1}`).offsetTop;
+//     if (scrollTop >= sectionTop && scrollTop < (sectionTop + sectionHeight)) {
+//       text.classList.add('active');
+//     } else {
+//       text.classList.remove('active');
+//     }
+//   });
+// });
 
