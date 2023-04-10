@@ -33,7 +33,7 @@
   scale: 1.3;
   border: none;
   border-radius: 50%;
-  background:  $VeertienBlue;
+  background:  $VeertienBlack;
   padding: 1rem;
   overflow: hidden;
   outline: none;
@@ -105,27 +105,20 @@
 }
 
 .progress-bar-container {
-  background-color: black;
-  font-size: 1rem;
-  font-weight: 700;
   position: fixed;
-  width: 56px;
-  height: 100px;
-  margin-top: calc(20vh - 100px);
   z-index: 999;
   a{
     color: $VeertienWhite;
   }
-  translate: -30px;
+
   transition: ease-in 1s;
   transition-delay: 1s;
   -webkit-transition: all 200ms;
   transition: all 200ms;
 }
 .linkNav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
   padding: 3vh 0;
   // justify-content: center;
   // align-items: center;

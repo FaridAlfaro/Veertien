@@ -1,9 +1,12 @@
 .img_carousel{
   object-fit: cover;
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
 }
-
+.full-screen {
+  height: 100%; /* altura igual a la altura de la pantalla */
+  width: 100%; /* ancho igual al ancho de la pantalla */
+}
 .title_section1 {
   //text-align: center;
   font-size: 2.4rem;
@@ -16,9 +19,9 @@
 .caja__textos{
   position: relative;
   margin-bottom: 2rem;
-  // top: 30%;
-  // left: 30%;
-  // transform: translate(-30%, -30%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
