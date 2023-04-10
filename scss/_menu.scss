@@ -74,6 +74,7 @@
 .menu-toggle.active .cross span:last-child{
 	transform:translateY(-50%) rotate(-45deg) scaleX(1);
 }
+<<<<<<< HEAD
 body {
   overflow-x: hidden;
 }
@@ -205,3 +206,118 @@ body {
     color: $VeertienWhite;
   }
 }
+=======
+
+.hidden-panel {
+  background: #333;
+  color: #666;
+  font-size: 0.875rem;
+  height: 100%;
+  position: absolute;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  a {
+    
+    color: #999;
+    transition: color 0.3s ease-out;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.hidden-panel-close {
+  color: #666;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 3.7em;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.hidden-panel-content {
+  padding: 3.65em 10%;
+}
+
+.hidden-panel-nav {
+  position: static;
+  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgba(#666, 0.25);
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  text-transform: uppercase;
+  h3 {
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+  }
+  ul {
+    list-style: none;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 0.25em 0;
+  }
+}
+.hidden-panel-text {
+  line-height: 1.5;
+  p {
+    margin-bottom: 1.5em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hidden-panel-credits {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  span {
+    display: block;
+    margin-bottom: 0.15em;
+  }
+}
+
+.banner {
+  background: #f5756c;
+  background: linear-gradient(#f5756c, #fd5480), #f5756c;
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  padding: 5em 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  h1 {
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 4.375rem;
+    margin-bottom: 1em;
+  }
+  h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+>>>>>>> 45b1dff9426fc7042281b053da29cf43f3f8034d
