@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 let Textos = new Array();
 // Enter the names of the images below
 Textos[0] = "Desarrollo web";
-Textos[1] = "Ciencia de datos";
+Textos[1] = "UX/UI";
 Textos[2] = "Diseño multimedia";
 
 let nuevoTexto = -1; // para empezar en el primer texto -1, con 0 comienza por mostrar el segundo

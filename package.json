@@ -14,7 +14,7 @@
     "animejs": "^3.2.1",
     "granim": "^2.0.0",
     "remixicon": "^2.5.0",
-    "sass": "^1.59.3"
+    "sass": "^1.70.0"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,5 @@
     "url": "https://github.com/FaridAlfaro/Veertien/issues"
   },
   "homepage": "https://github.com/FaridAlfaro/Veertien#readme",
-  "description": "Veentier versin 1",
-  "devDependencies": {}
+  "description": "Veentier versin 1"
 }
