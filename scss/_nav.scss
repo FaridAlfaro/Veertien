@@ -8,10 +8,11 @@ nav {
   left: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  z-index: 10; 
+  justify-content: center; /* Center elements horizontally */
+  z-index: 10;
 }
-  .logo_nav {
-    height: auto; 
-    margin: 20px 0;
+
+.logo_nav {
+  height: auto;
+  /* Remove unnecessary margin, as centering handles spacing */
 }
