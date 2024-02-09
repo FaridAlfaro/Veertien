@@ -16,17 +16,14 @@
 }
 @keyframes ss {
   0% {
-    scale: 0.8;
     opacity: 0;
     filter: brightness(0);
   }
   50% {
-    scale: 0.9;
     opacity: 50;
     color: $VeertienBlack;
   }
   100% {
-    scale: 1;
     opacity: 100;
     color: $VeertienBlue;
   }
