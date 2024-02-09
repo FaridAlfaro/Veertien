@@ -2,17 +2,12 @@
 nav {
   transition: all ease-in-out 1s;
   width: 100%;
-  height: 10px;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: row;
   justify-content: center; /* Center elements horizontally */
-  z-index: 10;
+  z-index: 0;
 }
 
-.logo_nav {
-  height: auto;
-  /* Remove unnecessary margin, as centering handles spacing */
-}

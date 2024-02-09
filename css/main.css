@@ -126,7 +126,7 @@ nav {
 }
 
 .logo_nav {
-  height: 1.4rem;
+  height: fit-content;
 }
 
 .section_container {
